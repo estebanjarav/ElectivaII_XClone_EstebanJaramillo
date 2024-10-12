@@ -1,13 +1,16 @@
-Electiva II
-Integrantes del Equipo
-Esteban Jaramillo Vasquez
-Tecnología en que se Desarrolló
-NodeJS
-MongoDB
+# Electiva II
+## Integrantes del Equipo
+- [Esteban Jaramillo Vasquez](https://github.com/estebanjarav/)
 
-Nombre del Proyecto
-Clone de la red social X en la cual se practicó la construccion de microservicios con NodeJS, express, mongoose como ODM, y autenticacion con JWT y permite crear un usuario, hacer loguin, seguir otros usuarios y publicar tweets.
-
-Como Correr el proyecto
-Clona el Repositorio:
+## Tecnología en que se Desarrolló
+- NodeJS
+- MongoDB
+- Bcrypt
+- Jsonwebtoken
+---
+# Clone de la red social X
+En el que se practicó la construccion de microservicios con NodeJS, mongoose como ODM, y autenticacion con JWT y Bcrypt para encriptacion de contraseñas.
+## Como Correr el proyecto
+1. **Clona el Repositorio:**
+```bash
 git clone https://github.com/estebanjarav/ElectivaII_XClone_EstebanJaramillo.git
