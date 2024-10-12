@@ -1,0 +1,36 @@
+version: '3.8'
+services:
+  auth-service:
+    build: ./auth-service
+    ports:
+      - "3001:3000"
+    environment:
+      - MONGODB_URI=mongodb://mongo:27017/auth
+    depends_on:
+      - mongo
+  user-service:
+    build: ./user-service
+    ports:
+      - "3002:3000"
+    environment:
+      - MONGODB_URI=mongodb://mongo:27017/users
+    depends_on:
+      - mongo
+
+  tweet-service:
+    build: ./tweet-service
+    ports:
+      - "3003:3000"
+    environment:
+      - MONGODB_URI=mongodb://mongo:27017/tweets
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo:6.0
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
