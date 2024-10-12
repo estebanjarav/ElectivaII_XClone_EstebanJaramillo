@@ -1,0 +1,11 @@
+{
+  "name": "tweet-service",
+  "version": "1.0.0",
+  "description": "Microservice of tweets",
+  "main": "y",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "EJV",
+  "license": "MIT"
+}
